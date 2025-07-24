@@ -18,7 +18,7 @@ session_start();
   <header>
     <h1>📚 BookZone</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.php">Home</a>
       <a href="cart.php">Cart</a>
       <a href="orders.php">Orders</a>
       <a href="#categories">Categories</a>
@@ -26,7 +26,6 @@ session_start();
       <a href="login.php" style="color: #f1c40f;">Login</a>
       <a href="logout.php" style="color: #f1c40f;">Logout</a>
     </nav>
-    <p style="text-align: center; margin-top: 10px;">Welcome</p>
   </header>
 
   <section class="hero">
