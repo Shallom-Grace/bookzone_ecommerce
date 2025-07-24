@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background: #2c3e50;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.book-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+#chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3498db;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+#chat-icon:hover {
+  transform: scale(1.1);
+}
+
+#chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#chat-history {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+#chat-controls {
+  display: flex;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+#sendBtn {
+  padding: 10px 15px;
+  margin-left: 8px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#sendBtn:hover {
+  background: #2980b9;
+}
+
+.hidden {
+  display: none;
+}
+
+#chat-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: none; 
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+#chat-header {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+.chat-bubble {
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 80%;
+  clear: both;
+  display: inline-block;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  float: right;
+}
+
+.bot {
+  background-color: #ecf0f1;
+  align-self: flex-start;
+  float: left;
+}
+
+.hero {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  background: white;
+  color: #3498db;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.hero .btn:hover {
+  background: #f1f1f1;
+}
+
+.categories {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.category-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.add-cart-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background-color: #ea580c;
+}
+
