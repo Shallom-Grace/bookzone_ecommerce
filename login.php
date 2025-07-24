@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <header>
     <h1>📚 BookZone</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.php">Home</a>
       <a href="register.php">Register</a>
     </nav>
   </header>
